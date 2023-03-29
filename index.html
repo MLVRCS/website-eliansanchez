@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+<!-- Chang your title here! -->
+<title>Gra Gra BOOM</title>
+
+<!-- DO NOT CHANGE ANY OF THIS -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!-- Here is your stylesheet -->
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #C8E642;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #E1FD65;
+  backround-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmOzMmciIihJxN7BTdZCykMmWNHdo1x4YHacRCiAZx4bALW-_-m6ohZl80VLQIG7KDhZs&usqp=CAU')
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #B3CD3C;
+  padding: 10px;
+  text-align: center;
+  color: #E1FD65;
+  
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens DO NOT CHANGE THIS! */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+
+
+<body>
+
+<header>
+  <h2>All About Me</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Rice</a></li>
+      <li><a href="#">Beans</a></li>
+      <li><a href="#">Chicken</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>All About Elian Sanchez</h1>
+    <p>Im 12 years old and I was born on May 14th,2010</p>
+    <p>I love to play games and board games</p>
+  </article>
+</section>
+
+<footer>
+  <p>Elian Sanchez, @esanchez.mlvrcs.org</p>
+</footer>
+
+</body>
+</html>
